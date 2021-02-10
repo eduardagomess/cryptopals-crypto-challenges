@@ -19,10 +19,6 @@ for num in range(255):
     binary = "{:08b}".format(num)
     binary_to_scii_dictionary[binary] = chr(num)
 
-plain = ["Burning 'em, if you ain't quick and nimble",
-         'I go crazy when I hear a cymbal']
-key = "ICE"
-
 def singleByteXorCipher(string):
     string_length = len(bytearray.fromhex((string)))
     count = 0
@@ -66,4 +62,4 @@ def singleByteXorCipher(string):
     return possible_messages
     
             
-print(biggestScore((singleByteXorCipher("0e3647e8592d35514a081243582536ed3de6734059001e3f535ce6271032"))))
+biggestScore((singleByteXorCipher("0e3647e8592d35514a081243582536ed3de6734059001e3f535ce6271032")))
