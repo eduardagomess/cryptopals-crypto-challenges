@@ -53,5 +53,5 @@ def encryptString(string, key_to_encrypt):
     
     return formartHex(string_encrypted)
                   
-print(encryptString("""Burning 'em, if you ain't quick and nimble
-I go crazy when I hear a cymbal""", "ICE"))
+encryptString("""Burning 'em, if you ain't quick and nimble
+I go crazy when I hear a cymbal""", "ICE")
