@@ -8,8 +8,14 @@ def binary_to_scii():
         binary = "{:08b}".format(num)
         binary_to_scii_dictionary[binary] = chr(num)
     return binary_to_scii_dictionary
+  
+#dictionary with value in binary number
+def ascii_to_bin():
+  ascii_to_bin_dictionary = {}
+  for num in range(255):
+    ascii_to_bin_dictionary[chr(num)] = "{:08b}".format(num) 
 
-#function to format string in hex   
+    #function to format string in hex   
 def formartHex(string):    
     string_binary = ""
     
@@ -86,4 +92,4 @@ possible_single_character_XOR = []
 for line in data_file:
     possible_single_character_XOR.append(singleByteXorCipher(line))
 
-print(biggestScore(possible_single_character_XOR))
+biggestScore(possible_single_character_XOR)
